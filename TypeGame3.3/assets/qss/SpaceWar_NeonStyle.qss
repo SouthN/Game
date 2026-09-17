@@ -1,0 +1,222 @@
+/************************** 全局基础配置 **************************/
+* {
+    font-family: "Microsoft YaHei", "SimHei", "PingFang SC", sans-serif;
+    font-weight: 500;
+    outline: none;
+}
+
+/************************** 主窗口与游戏视图基础 **************************/
+PlaneGameWindow {
+    background-color: transparent;
+}
+
+QGraphicsView {
+    border: none;
+    background-color: transparent;
+}
+
+/************************** 控制栏样式 **************************/
+#ControlBar {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(10, 15, 30, 0.8), 
+        stop:1 rgba(5, 8, 20, 0.9));
+    border-top: 1px solid rgba(0, 216, 255, 0.5); /* 霓虹蓝边框 */
+    min-height: 60px;
+}
+
+/* 控制栏按钮样式 */
+#ControlBar QPushButton {
+    min-width: 100px;
+    min-height: 38px;
+    font-size: 15px;
+    color: #e0f7fa;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(0, 150, 200, 0.8), 
+        stop:1 rgba(0, 80, 120, 0.8));
+    border: 1px solid rgba(0, 216, 255, 0.6);
+    border-radius: 19px;
+    padding: 4px 12px;
+}
+
+#ControlBar QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(0, 180, 240, 0.9), 
+        stop:1 rgba(0, 100, 150, 0.9));
+    border-color: rgba(0, 255, 255, 0.9);
+    color: #ffffff;
+}
+
+#ControlBar QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(0, 80, 120, 0.95), 
+        stop:1 rgba(0, 50, 80, 0.95));
+    padding-top: 6px;
+    padding-left: 14px;
+}
+
+#ControlBar QPushButton:disabled {
+    background: rgba(40, 50, 60, 0.6);
+    border-color: rgba(100, 110, 120, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* 统计数据标签 */
+#StatsLabel {
+    font-size: 15px;
+    color: #00d8ff;
+    background-color: rgba(0, 20, 40, 0.6);
+    border: 1px solid rgba(0, 216, 255, 0.4);
+    border-radius: 12px;
+    padding: 8px 16px;
+    min-width: 110px;
+}
+
+/************************** 设置对话框样式 **************************/
+PlaneGameSettingsDialog {
+    border-radius: 16px;
+    background-color: rgba(15, 20, 35, 0.95);
+    border: 1px solid rgba(0, 150, 200, 0.5);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 表单标签样式 */
+PlaneGameSettingsDialog QLabel {
+    color: #8ab4f8;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+/* 数值显示标签 */
+PlaneGameSettingsDialog QLabel#m_levelValueLabel,
+PlaneGameSettingsDialog QLabel#m_appleCountValueLabel,
+PlaneGameSettingsDialog QLabel#m_targetValueLabel,
+PlaneGameSettingsDialog QLabel#m_brightnessValueLabel,
+PlaneGameSettingsDialog QLabel#m_contrastValueLabel,
+PlaneGameSettingsDialog QLabel#m_saturationValueLabel,
+PlaneGameSettingsDialog QLabel#m_vignetteValueLabel {
+    color: #00d8ff;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 50px;
+}
+
+/************************** 滑动条样式 **************************/
+PlaneGameSettingsDialog QSlider::groove:horizontal {
+    height: 12px;
+    background: rgba(0, 50, 80, 0.5);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 150, 200, 0.3);
+    margin: 0px;
+}
+
+PlaneGameSettingsDialog QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #005588, stop:1 #00d8ff);
+    border-radius: 5px;
+    margin: 2px 13px 2px 2px;
+}
+
+PlaneGameSettingsDialog QSlider::add-page:horizontal {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 2px 2px 2px 13px;
+}
+
+PlaneGameSettingsDialog QSlider::handle:horizontal {
+    width: 20px;
+    height: 20px;
+    margin: -5px 0px -5px 0px;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.8,
+        fx:0.5, fy:0.5, stop:0 #ffffff, stop:0.4 #00d8ff, stop:1 #005588);
+    border: 1px solid #00d8ff;
+    border-radius: 10px;
+}
+
+/************************** 设置对话框按钮样式 **************************/
+PlaneGameSettingsDialog QPushButton {
+    min-width: 100px;
+    min-height: 38px;
+    font-size: 16px;
+    color: #ffffff;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #0088cc, stop:1 #005588);
+    border: 1px solid #00d8ff;
+    border-radius: 19px;
+    padding: 4px 12px;
+}
+
+PlaneGameSettingsDialog QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #00aaee, stop:1 #0077aa);
+    box-shadow: 0 0 10px #00d8ff;
+}
+
+PlaneGameSettingsDialog QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #004466, stop:1 #002233);
+    padding-top: 6px;
+    padding-left: 14px;
+}
+
+/************************** 消息弹窗样式 **************************/
+QMessageBox {
+    background-color: rgba(15, 20, 35, 0.95);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 216, 255, 0.5);
+}
+
+QMessageBox QLabel {
+    color: #e0f7fa;
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    min-height: 32px;
+    font-size: 14px;
+    color: #ffffff;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #0088cc, stop:1 #005588);
+    border: 1px solid #00d8ff;
+    border-radius: 16px;
+}
+
+QMessageBox QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #00aaee, stop:1 #0077aa);
+}
+/* 复选框（音效开关）样式 */
+PlaneGameSettingsDialog QCheckBox {
+    font-family: "Microsoft YaHei", "SimHei", "PingFang SC", sans-serif; /* 强制覆盖字体 */
+    spacing: 10px;
+    color: #8ab4f8;
+    font-size: 16px;
+}
+
+PlaneGameSettingsDialog QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #00d8ff;
+    background: rgba(0, 20, 40, 0.6);
+}
+
+PlaneGameSettingsDialog QCheckBox::indicator:unchecked:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 8px #00d8ff;
+}
+
+PlaneGameSettingsDialog QCheckBox::indicator:checked {
+    background: #00d8ff;
+    image: url(:/UI/assets/icons/power_on.png); /* 电子开关图标 */
+}
+
+/* 音量数值专用标签 */
+PlaneGameSettingsDialog QLabel#m_volumeValueLabel {
+    color: #00d8ff;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 50px;
+    text-shadow: 0 0 5px #00d8ff;
+}

@@ -1,0 +1,338 @@
+/* Backpack_NewStyle.qss
+ * Sci-fi blue backpack skin, based on the objectName values used in BackpackDialog.
+ * Put this file into: :/MainWindow/assets/qss/Backpack_NewStyle.qss
+ */
+
+/* ========== Global ========== */
+QDialog#BackpackDialog {
+    background: transparent;
+    color: #d9f2ff;
+    font-family: "Microsoft YaHei", "SimHei", "Arial";
+    font-size: 14px;
+}
+
+QDialog#BackpackDialog QLabel {
+    background: transparent;
+    color: #d9f2ff;
+}
+
+QToolTip {
+    color: #d9f2ff;
+    background-color: rgba(5, 19, 39, 230);
+    border: 1px solid rgba(58, 183, 255, 170);
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+/* ========== Top resource/title bar ========== */
+QWidget#TopBarWidget {
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(5, 20, 42, 245),
+        stop:0.50 rgba(8, 35, 68, 245),
+        stop:1 rgba(5, 20, 42, 245)
+    );
+    border-top: 1px solid rgba(86, 207, 255, 190);
+    border-left: 1px solid rgba(42, 142, 219, 150);
+    border-right: 1px solid rgba(42, 142, 219, 150);
+    border-bottom: 1px solid rgba(30, 91, 145, 170);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+QLabel#TopBarLabel {
+    color: #e8fbff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 4px;
+}
+
+QPushButton#ResourceAddBtn {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    color: #bff4ff;
+    font-weight: 900;
+    border: 1px solid rgba(55, 190, 255, 190);
+    border-radius: 12px;
+    background: qradialgradient(
+        cx:0.5, cy:0.35, radius:0.85,
+        fx:0.5, fy:0.35,
+        stop:0 rgba(52, 177, 255, 210),
+        stop:0.55 rgba(12, 63, 111, 230),
+        stop:1 rgba(4, 18, 35, 240)
+    );
+}
+QPushButton#ResourceAddBtn:hover {
+    color: #ffffff;
+    border: 1px solid rgba(132, 231, 255, 230);
+    background-color: rgba(36, 145, 220, 200);
+}
+QPushButton#ResourceAddBtn:pressed {
+    padding-top: 1px;
+    padding-left: 1px;
+    background-color: rgba(8, 48, 91, 230);
+}
+
+QPushButton#CloseBtn {
+    min-width: 32px;
+    min-height: 28px;
+    max-width: 32px;
+    max-height: 28px;
+    color: #9fcfe8;
+    font-weight: 800;
+    border: 1px solid rgba(67, 147, 211, 120);
+    border-radius: 5px;
+    background: rgba(8, 23, 43, 150);
+}
+QPushButton#CloseBtn:hover {
+    color: #ffffff;
+    border: 1px solid rgba(255, 92, 92, 220);
+    background: rgba(122, 25, 35, 210);
+}
+QPushButton#CloseBtn:pressed {
+    background: rgba(75, 10, 20, 230);
+}
+
+/* ========== Main body ========== */
+QWidget#BodyWidget {
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(4, 16, 34, 235),
+        stop:0.45 rgba(8, 25, 50, 232),
+        stop:1 rgba(2, 9, 22, 238)
+    );
+    border-left: 1px solid rgba(38, 133, 205, 150);
+    border-right: 1px solid rgba(38, 133, 205, 150);
+    border-bottom: 1px solid rgba(53, 171, 246, 160);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* ========== Left category rail ========== */
+QWidget#CategoryWidget {
+    background: rgba(3, 14, 29, 160);
+    border: 1px solid rgba(38, 139, 220, 135);
+    border-radius: 8px;
+}
+
+QPushButton#CategoryBtn {
+    min-width: 58px;
+    min-height: 58px;
+    max-width: 58px;
+    max-height: 58px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ccefff;
+    border: 1px solid rgba(49, 142, 218, 150);
+    border-radius: 7px;
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(12, 42, 75, 210),
+        stop:1 rgba(4, 17, 34, 225)
+    );
+}
+QPushButton#CategoryBtn:hover {
+    border: 1px solid rgba(97, 218, 255, 230);
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(18, 78, 127, 230),
+        stop:1 rgba(8, 34, 66, 240)
+    );
+}
+QPushButton#CategoryBtn:checked {
+    border: 2px solid rgba(112, 226, 255, 245);
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(29, 131, 202, 230),
+        stop:0.45 rgba(10, 58, 104, 245),
+        stop:1 rgba(3, 22, 45, 245)
+    );
+}
+QPushButton#CategoryBtn:pressed {
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+/* ========== Item grid area ========== */
+QScrollArea#ItemScrollArea {
+    background: rgba(3, 12, 27, 145);
+    border: 1px solid rgba(43, 144, 221, 145);
+    border-radius: 8px;
+}
+
+QWidget#ItemScrollViewport,
+QWidget#ItemContainer {
+    background: transparent;
+    border: none;
+}
+
+/* Scrollbar: sci-fi blue thin style
+ * add-page / sub-page 不要透明，否则部分系统会露出默认白底。
+ * 这里仍保留 QSS，作为全局皮肤；真正兜底在 cpp 中对 verticalScrollBar()->setStyleSheet()。
+ */
+QScrollArea#ItemScrollArea QScrollBar:vertical,
+QScrollBar#ItemVerticalScrollBar,
+QScrollBar:vertical {
+    width: 14px;
+    min-width: 14px;
+    max-width: 14px;
+    margin: 6px 2px 6px 2px;
+    border: none;
+    border-radius: 7px;
+    background: rgba(1, 8, 22, 230);
+}
+
+QScrollArea#ItemScrollArea QScrollBar::groove:vertical,
+QScrollBar#ItemVerticalScrollBar::groove:vertical,
+QScrollBar::groove:vertical {
+    width: 14px;
+    border: 1px solid rgba(42, 145, 220, 120);
+    border-radius: 7px;
+    background: rgba(1, 8, 22, 230);
+}
+
+QScrollArea#ItemScrollArea QScrollBar::handle:vertical,
+QScrollBar#ItemVerticalScrollBar::handle:vertical,
+QScrollBar::handle:vertical {
+    min-height: 42px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid rgba(144, 238, 255, 200);
+    border-radius: 5px;
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(13, 70, 130, 245),
+        stop:0.48 rgba(60, 186, 255, 250),
+        stop:1 rgba(16, 87, 155, 245)
+    );
+}
+
+QScrollArea#ItemScrollArea QScrollBar::handle:vertical:hover,
+QScrollBar#ItemVerticalScrollBar::handle:vertical:hover,
+QScrollBar::handle:vertical:hover {
+    border: 1px solid rgba(215, 252, 255, 240);
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(24, 100, 172, 250),
+        stop:0.50 rgba(112, 226, 255, 255),
+        stop:1 rgba(24, 100, 172, 250)
+    );
+}
+
+QScrollArea#ItemScrollArea QScrollBar::handle:vertical:pressed,
+QScrollBar#ItemVerticalScrollBar::handle:vertical:pressed,
+QScrollBar::handle:vertical:pressed {
+    background: rgba(36, 153, 230, 255);
+}
+
+QScrollArea#ItemScrollArea QScrollBar::add-line:vertical,
+QScrollArea#ItemScrollArea QScrollBar::sub-line:vertical,
+QScrollBar#ItemVerticalScrollBar::add-line:vertical,
+QScrollBar#ItemVerticalScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    width: 0px;
+    border: none;
+    background: rgba(1, 8, 22, 230);
+}
+
+QScrollArea#ItemScrollArea QScrollBar::add-page:vertical,
+QScrollArea#ItemScrollArea QScrollBar::sub-page:vertical,
+QScrollBar#ItemVerticalScrollBar::add-page:vertical,
+QScrollBar#ItemVerticalScrollBar::sub-page:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    border: none;
+    border-radius: 6px;
+    background: rgba(1, 8, 22, 230);
+}
+
+QScrollArea#ItemScrollArea::corner {
+    background: transparent;
+    border: none;
+}
+
+/* ========== Right detail panel ========== */
+QWidget#DetailPanel {
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(8, 30, 60, 235),
+        stop:0.50 rgba(5, 18, 39, 238),
+        stop:1 rgba(2, 9, 24, 242)
+    );
+    border: 1px solid rgba(57, 166, 238, 165);
+    border-radius: 8px;
+}
+
+QLabel#DetailTitleLabel {
+    color: #f2fdff;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 4px 2px 8px 2px;
+    border-bottom: 1px solid rgba(58, 172, 237, 120);
+}
+
+QLabel#DetailSubLabel {
+    color: #8edcff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 4px;
+    background: rgba(14, 57, 98, 100);
+    border: 1px solid rgba(57, 157, 225, 95);
+    border-radius: 4px;
+}
+
+QLabel#DetailDescLabel {
+    color: #c8e6f7;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 12px;
+    background: rgba(2, 10, 23, 115);
+    border: 1px solid rgba(37, 118, 191, 100);
+    border-radius: 6px;
+}
+
+QWidget#DetailPanel QLabel {
+    selection-background-color: rgba(67, 181, 255, 180);
+}
+
+/* ========== Main action button ========== */
+QPushButton#UseBtn {
+    min-height: 42px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: 1px solid rgba(117, 225, 255, 220);
+    border-radius: 7px;
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(71, 184, 255, 235),
+        stop:0.50 rgba(23, 103, 188, 240),
+        stop:1 rgba(8, 53, 113, 245)
+    );
+}
+QPushButton#UseBtn:hover {
+    border: 1px solid rgba(179, 246, 255, 250);
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(105, 218, 255, 245),
+        stop:0.50 rgba(35, 133, 213, 245),
+        stop:1 rgba(12, 67, 136, 250)
+    );
+}
+QPushButton#UseBtn:pressed {
+    padding-top: 2px;
+    background: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(10, 66, 130, 245),
+        stop:1 rgba(17, 112, 193, 240)
+    );
+}
+QPushButton#UseBtn:disabled {
+    color: rgba(180, 207, 222, 125);
+    border: 1px solid rgba(80, 114, 140, 110);
+    background: rgba(28, 45, 62, 145);
+}

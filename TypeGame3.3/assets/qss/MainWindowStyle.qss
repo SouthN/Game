@@ -1,0 +1,144 @@
+/* 全局样式初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", "SimHei", sans-serif;
+    outline: none;
+}
+
+/* 主窗口样式 */
+MainWindow {
+    background-color: #f0f7ff;
+    border: 1px solid #2b7cd3;
+}
+
+/* 顶部标题栏 */
+QWidget#TopBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4a98e9, stop:1 #2b7cd3);
+    min-height: 80px;
+    max-height: 80px;
+}
+
+/* 标题文本 */
+QLabel#TitleLabel {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    background: transparent;
+}
+
+/* 登录按钮 */
+QPushButton#LoginBtn {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+QPushButton#LoginBtn:hover {
+    background: rgba(255,255,255,20);
+    border-radius: 4px;
+}
+
+/* 窗口控制按钮（最小化/最大化/关闭） */
+QPushButton#WindowCtrlBtn {
+    color: white;
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+QPushButton#WindowCtrlBtn:hover {
+    background: rgba(255,255,255,30);
+}
+QPushButton#WindowCtrlBtn#CloseBtn:hover {
+    background: #e81123;
+}
+
+/* 导航栏（返回+面包屑） */
+QWidget#NavBar {
+    background-color: #f0f7ff;
+    min-height: 40px;
+    max-height: 40px;
+    border-bottom: 1px solid #d0e4f8;
+}
+
+/* 返回按钮 */
+QPushButton#BackBtn {
+    background-color: white;
+    border: 1px solid #d0e4f8;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+QPushButton#BackBtn:hover {
+    background-color: #e6f2ff;
+    border-color: #2b7cd3;
+}
+
+/* 面包屑文本 */
+QLabel#BreadcrumbLabel {
+    color: #333333;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* 游戏分类标题 */
+QLabel#CategoryLabel {
+    color: #222222;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    padding: 10px 0;
+}
+
+/* 游戏卡片容器 */
+QWidget#GameCard {
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+QWidget#GameCard:hover {
+    border-color: #80bfff;
+}
+QWidget#GameCard[selected="true"] {
+    border-color: #ff3333;
+}
+QWidget#GameCard:disabled {
+    opacity: 0.5;
+}
+
+/* 游戏封面图 */
+QLabel#GameIcon {
+    background: transparent;
+    border: 1px solid #eeeeee;
+}
+
+/* 游戏名称文本 */
+QLabel#GameName {
+    color: #333333;
+    font-size: 14px;
+    background: transparent;
+    padding: 8px 0;
+}
+
+/* 底部状态栏 */
+QWidget#BottomBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4a98e9, stop:1 #2b7cd3);
+    min-height: 30px;
+    max-height: 30px;
+}
+
+/* 设置按钮 */
+QPushButton#SettingBtn {
+    color: white;
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+QPushButton#SettingBtn:hover {
+    background: rgba(255,255,255,30);
+}

@@ -1,0 +1,229 @@
+/************************** 全局基础配置 **************************/
+* {
+    font-family: "Microsoft YaHei", "SimHei", "PingFang SC", sans-serif;
+    font-weight: 500;
+    outline: none;
+}
+
+/************************** 主窗口与游戏视图基础 **************************/
+AppleGameWindow {
+    background-color: transparent;
+}
+
+QGraphicsView {
+    border: none;
+    background-color: transparent;
+}
+
+/************************** 控制栏样式 **************************/
+#ControlBar {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(255, 255, 255, 0.25), 
+        stop:1 rgba(180, 220, 255, 0.2));
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 60px;
+}
+
+/* 控制栏按钮样式 */
+#ControlBar QPushButton {
+    min-width: 100px;
+    min-height: 38px;
+    font-size: 15px;
+    color: #ffffff;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(120, 200, 120, 0.9), 
+        stop:1 rgba(60, 150, 80, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 19px;
+    padding: 4px 12px;
+}
+
+#ControlBar QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(140, 220, 140, 0.95), 
+        stop:1 rgba(80, 170, 100, 0.95));
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+#ControlBar QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(60, 150, 80, 0.95), 
+        stop:1 rgba(40, 120, 60, 0.95));
+    padding-top: 6px;
+    padding-left: 14px;
+}
+
+#ControlBar QPushButton:disabled {
+    background: rgba(160, 160, 160, 0.6);
+    border-color: rgba(200, 200, 200, 0.4);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 统计数据标签 */
+#StatsLabel {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgba(0, 30, 20, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 8px 16px;
+    min-width: 110px;
+}
+
+/************************** 设置对话框样式 **************************/
+AppleGameSettingsDialog {
+    border-radius: 16px;
+    background-color: rgba(240, 248, 255, 0.92);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 表单标签样式 */
+AppleGameSettingsDialog QLabel {
+    color: #2d4a3e;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+/* 数值显示标签 */
+AppleGameSettingsDialog QLabel#m_levelValueLabel,
+AppleGameSettingsDialog QLabel#m_appleCountValueLabel,
+AppleGameSettingsDialog QLabel#m_targetValueLabel,
+AppleGameSettingsDialog QLabel#m_brightnessValueLabel,
+AppleGameSettingsDialog QLabel#m_contrastValueLabel,
+AppleGameSettingsDialog QLabel#m_saturationValueLabel,
+AppleGameSettingsDialog QLabel#m_vignetteValueLabel {
+    color: #3a6b57;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 50px;
+}
+
+/************************** 滑动条样式 **************************/
+/* 滑动条轨道 */
+AppleGameSettingsDialog QSlider::groove:horizontal {
+    height: 22px;
+    background: rgba(60, 100, 80, 0.2);
+    border-radius: 11px;
+    border: 1px solid rgba(60, 100, 80, 0.3);
+    margin: 0px;
+}
+
+/* 滑块左侧已填充区域 */
+AppleGameSettingsDialog QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #72c4a0, stop:1 #4a9d7c);
+    border-radius: 10px;
+    margin: 2px 13px 2px 2px;
+}
+
+/* 滑块右侧未填充区域 */
+AppleGameSettingsDialog QSlider::add-page:horizontal {
+    background: rgba(60, 100, 80, 0.15);
+    border-radius: 10px;
+    margin: 2px 2px 2px 13px;
+}
+
+/* 滑动条滑块 */
+AppleGameSettingsDialog QSlider::handle:horizontal {
+    width: 26px;
+    height: 26px;
+    margin: -3px 0px -3px 0px;
+    background: qradialgradient(cx:0.3, cy:0.3, radius:1,
+        fx:0.3, fy:0.3, stop:0 #ffffff, stop:0.8 #72c4a0, stop:1 #3a6b57);
+    border: 1px solid #3a6b57;
+    border-radius: 13px;
+}
+
+/* 滑动条刻度线 */
+AppleGameSettingsDialog QSlider::tick:horizontal {
+    width: 1px;
+    background: #3a6b57;
+    margin-top: 8px;
+}
+
+/************************** 设置对话框按钮样式 **************************/
+AppleGameSettingsDialog QPushButton {
+    min-width: 100px;
+    min-height: 38px;
+    font-size: 16px;
+    color: #ffffff;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #72c4a0, stop:1 #4a9d7c);
+    border: 1px solid #3a6b57;
+    border-radius: 19px;
+    padding: 4px 12px;
+}
+
+AppleGameSettingsDialog QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #88d4b0, stop:1 #5aaf8c);
+}
+
+AppleGameSettingsDialog QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4a9d7c, stop:1 #3a6b57);
+    padding-top: 6px;
+    padding-left: 14px;
+}
+
+/************************** 消息弹窗样式 **************************/
+QMessageBox {
+    background-color: rgba(240, 248, 255, 0.95);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+QMessageBox QLabel {
+    color: #2d4a3e;
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    min-height: 32px;
+    font-size: 14px;
+    color: #ffffff;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #72c4a0, stop:1 #4a9d7c);
+    border: 1px solid #3a6b57;
+    border-radius: 16px;
+}
+
+QMessageBox QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #88d4b0, stop:1 #5aaf8c);
+}
+
+/* 复选框（音效开关）样式 */
+AppleGameSettingsDialog QCheckBox {
+    font-family: "Microsoft YaHei", "SimHei", "PingFang SC", sans-serif; /* 强制覆盖字体 */
+    spacing: 8px;
+    color: #2d4a3e;
+    font-size: 16px;
+}
+
+AppleGameSettingsDialog QCheckBox::indicator {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid #72c4a0;
+    background: #ffffff;
+}
+
+AppleGameSettingsDialog QCheckBox::indicator:unchecked:hover {
+    background: #f0fdf4;
+}
+
+AppleGameSettingsDialog QCheckBox::indicator:checked {
+    background: #72c4a0;
+    image: url(:/UI/assets/icons/check_white.png); /* 请确保路径下有勾选图标，或使用纯色 */
+}
+
+/* 音量数值专用标签 */
+AppleGameSettingsDialog QLabel#m_volumeValueLabel {
+    color: #3a6b57;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 50px;
+}
