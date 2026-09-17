@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>assets/qss/MainWindowStyle.qss</file>
+        <file>assets/images/MainWindow/logo.png</file>
+        <file>assets/images/MainWindow/panel_left.png</file>
+        <file>assets/images/MainWindow/panel_center.png</file>
+        <file>assets/images/MainWindow/panel_right.png</file>
+        <file>assets/images/MainWindow/btn_hex_hover.png</file>
+        <file>assets/images/MainWindow/btn_hex_normal.png</file>
+        <file>assets/images/MainWindow/icon_bag.png</file>
+        <file>assets/images/MainWindow/icon_chart.png</file>
+        <file>assets/images/MainWindow/icon_exit.png</file>
+        <file>assets/images/MainWindow/icon_gear.png</file>
+        <file>assets/images/MainWindow/icon_pause.png</file>
+        <file>assets/images/MainWindow/icon_plane.png</file>
+        <file>assets/images/MainWindow/icon_play.png</file>
+        <file>assets/images/MainWindow/avatar_girl.png</file>
+        <file>assets/images/MainWindow/bar_energy_chunk.png</file>
+        <file>assets/images/MainWindow/bar_hp_chunk.png</file>
+        <file>assets/images/MainWindow/icon_energy.png</file>
+        <file>assets/images/MainWindow/icon_hp.png</file>
+        <file>assets/qss/Backpack_NewStyle.qss</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file>translations/en_US.qm</file>
+        <file>translations/zh_CN.qm</file>
+    </qresource>
+</RCC>

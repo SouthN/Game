@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/SpaceWar">
+        <file>assets/qss/SpaceWar_NeonStyle.qss</file>
+        <file>assets/images/SpaceWar/PlayerPlane.png</file>
+        <file>assets/images/SpaceWar/Plane_BACKGROUND.png</file>
+        <file>assets/images/SpaceWar/Explosion4.png</file>
+        <file>assets/images/SpaceWar/Explosion5.png</file>
+        <file>assets/images/SpaceWar/Plane_BACKGROUND2.png</file>
+        <file>assets/images/SpaceWar/logo.png</file>
+        <file>assets/images/SpaceWar/Bullet.png</file>
+        <file>assets/images/SpaceWar/Bullet2.png</file>
+        <file>assets/images/SpaceWar/enemybullet1.png</file>
+        <file>assets/images/SpaceWar/enemybullet2.png</file>
+        <file>assets/images/SpaceWar/enemybullet3.png</file>
+        <file>assets/images/SpaceWar/Plane_BACKGROUND3.png</file>
+        <file>assets/images/SpaceWar/EnemyPlane3.png</file>
+        <file>assets/images/SpaceWar/Explosion6.png</file>
+        <file>assets/images/SpaceWar/CG_Stage1.png</file>
+        <file>assets/images/SpaceWar/CG_Stage2.png</file>
+        <file>assets/images/SpaceWar/CG_Stage3.png</file>
+        <file>assets/images/SpaceWar/CG_Stage4.png</file>
+        <file>assets/images/SpaceWar/CG_Stage5.png</file>
+        <file>assets/images/SpaceWar/CG_Stage6.png</file>
+        <file>assets/images/SpaceWar/CG_Stage7.png</file>
+        <file>assets/images/SpaceWar/CG_Stage8.png</file>
+        <file>assets/images/SpaceWar/CG_Stage9.png</file>
+        <file>assets/images/SpaceWar/CG_Stage10.png</file>
+        <file>assets/images/SpaceWar/Boss1.png</file>
+        <file>assets/images/SpaceWar/Boss2.png</file>
+        <file>assets/images/SpaceWar/Boss3.png</file>
+        <file>assets/images/SpaceWar/Boss1_b.png</file>
+        <file>assets/images/SpaceWar/Boss2_b.png</file>
+        <file>assets/images/SpaceWar/Boss3_b.png</file>
+    </qresource>
+</RCC>

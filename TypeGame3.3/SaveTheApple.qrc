@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/SaveTheApple">
+        <file>assets/images/SaveTheApple/APPLE_BACKGROUND.png</file>
+        <file>assets/images/SaveTheApple/APPLE_BASKET.png</file>
+        <file>assets/images/SaveTheApple/logo.png</file>
+        <file>assets/images/SaveTheApple/APPLE_REAL.png</file>
+        <file>assets/images/SaveTheApple/APPLE_BAD2.png</file>
+        <file>assets/qss/AppleGame_OrchardStyle.qss</file>
+        <file>assets/images/SaveTheApple/logo2.jpg</file>
+    </qresource>
+</RCC>

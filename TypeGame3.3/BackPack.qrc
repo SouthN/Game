@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/BackPack">
+        <file>assets/images/BackPack/Item.png</file>
+        <file>assets/images/BackPack/ItemQuality.png</file>
+        <file>assets/images/BackPack/category_all.png</file>
+        <file>assets/images/BackPack/category_item.png</file>
+        <file>assets/images/BackPack/category_material.png</file>
+        <file>assets/images/BackPack/category_quest.png</file>
+        <file>assets/images/BackPack/category_supply.png</file>
+        <file>assets/images/BackPack/category_weapon.png</file>
+        <file>assets/images/BackPack/Iron.png</file>
+        <file>assets/images/BackPack/mod.png</file>
+    </qresource>
+</RCC>

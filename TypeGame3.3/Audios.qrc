@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/Audios">
+        <file>assets/sounds/HitFlesh3.wav</file>
+        <file>assets/sounds/HitFlesh1.wav</file>
+        <file>assets/sounds/BGM.mp3</file>
+        <file>assets/sounds/BGM2.mp3</file>
+        <file>assets/sounds/Bullet.wav</file>
+        <file>assets/sounds/Explosion.wav</file>
+        <file>assets/sounds/Machinegun.wav</file>
+        <file>assets/sounds/PlaneHit.wav</file>
+        <file>assets/sounds/Upgrade.wav</file>
+        <file>assets/sounds/AlienExplosion.wav</file>
+        <file>assets/sounds/AlienHit.wav</file>
+        <file>assets/sounds/Heal.wav</file>
+        <file>assets/sounds/PlayerHit.wav</file>
+        <file>assets/sounds/ZergExplosion.wav</file>
+        <file>assets/sounds/ZergHit.wav</file>
+    </qresource>
+</RCC>

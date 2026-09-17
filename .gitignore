@@ -1,0 +1,32 @@
+# Build output
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Debug/
+Release/
+x64/
+*.exe
+*.dll
+*.obj
+*.o
+*.lib
+*.a
+*.pdb
+*.ilk
+
+# Local IDE settings
+.vs/
+.vscode/
+*.user
+*.user.*
+
+# Local secrets and OS files
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
