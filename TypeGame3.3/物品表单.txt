@@ -1,0 +1,44 @@
+// 物品基础库初始化列表：Item.png 为 6行 x 6列图集，row/column 从 0 开始。
+, m_itemRegistry({
+    {2001, makeAtlasItem(2001, tr("重型等离子炮"), 0, 0, 2, QUALITY_SSR, tr("可挂载在舰体前端的高能火炮，当前仅用于背包展示。"), 1, tr("backpack_category_weapon"))},
+    {2002, makeAtlasItem(2002, tr("穿甲星矛导弹"), 0, 1, 8, QUALITY_SR, tr("用于突破装甲外壳的高速导弹，展示阶段不触发战斗逻辑。"), 1, tr("backpack_category_weapon"))},
+    {2003, makeAtlasItem(2003, tr("蓝焰推进核心"), 0, 2, 12, QUALITY_R, tr("小型推进器的蓝色能量核心，可作为升级材料展示。"), 0, tr("backpack_category_material"))},
+    {2004, makeAtlasItem(2004, tr("量子能量核心"), 0, 3, 5, QUALITY_SSR, tr("封装高密度量子能量的核心部件，适合表现高级材料。"), 0, tr("backpack_category_material"))},
+    {2005, makeAtlasItem(2005, tr("恒星反应堆"), 0, 4, 3, QUALITY_SSR_PLUS, tr("带有橙色环形约束场的反应堆模块，稀有展示物。"), 0, tr("backpack_category_material"))},
+    {2006, makeAtlasItem(2006, tr("脉冲晶核"), 0, 5, 1, QUALITY_UR, tr("蓝色脉冲持续跃动的终极能源核心，用于突出最高品质效果。"), 0, tr("backpack_category_material"))},
+
+    {2007, makeAtlasItem(2007, tr("紫晶控制板"), 1, 0, 4, QUALITY_SR, tr("刻有紫色回路的控制板，可作为剧情解锁道具展示。"), 4, tr("backpack_category_quest"))},
+    {2008, makeAtlasItem(2008, tr("蓝环瞄准镜"), 1, 1, 6, QUALITY_R, tr("带有蓝色准星环的辅助瞄准模块。"), 1, tr("backpack_category_weapon"))},
+    {2009, makeAtlasItem(2009, tr("便携聚能塔"), 1, 2, 7, QUALITY_R, tr("可临时部署的聚能装置，当前仅作为普通道具展示。"), 2, tr("backpack_category_item"))},
+    {2010, makeAtlasItem(2010, tr("防御基座模块"), 1, 3, 3, QUALITY_SR, tr("重型设备的稳定基座，带有蓝色能量支柱。"), 2, tr("backpack_category_item"))},
+    {2011, makeAtlasItem(2011, tr("翠绿能量罐"), 1, 4, 15, QUALITY_R, tr("恢复型绿色能量补给罐，仅用于补给品展示。"), 3, tr("backpack_category_food"))},
+    {2012, makeAtlasItem(2012, tr("紫晶能量罐"), 1, 5, 9, QUALITY_SR, tr("含有紫晶粒子的高级能量补给罐。"), 3, tr("backpack_category_food"))},
+
+    {2013, makeAtlasItem(2013, tr("紫晶簇"), 2, 0, 24, QUALITY_SR, tr("由多枚紫色晶体组成的原矿材料。"), 0, tr("backpack_category_material"))},
+    {2014, makeAtlasItem(2014, tr("钛合金锭"), 2, 1, 36, QUALITY_N, tr("常见金属锭，可用于基础制造材料展示。"), 0, tr("backpack_category_material"))},
+    {2015, makeAtlasItem(2015, tr("蓝色补给箱"), 2, 2, 10, QUALITY_R, tr("标准蓝色补给箱，适合表现普通战利品。"), 2, tr("backpack_category_item"))},
+    {2016, makeAtlasItem(2016, tr("黄金装备箱"), 2, 3, 4, QUALITY_SSR, tr("金色锁扣的高级装备箱，用于稀有掉落展示。"), 2, tr("backpack_category_item"))},
+    {2017, makeAtlasItem(2017, tr("绿色强化箱"), 2, 4, 6, QUALITY_SR, tr("存放强化零件的绿色补给箱。"), 2, tr("backpack_category_item"))},
+    {2018, makeAtlasItem(2018, tr("医疗急救箱"), 2, 5, 12, QUALITY_R, tr("带有红色医疗标识的急救补给箱。"), 3, tr("backpack_category_food"))},
+
+    {2019, makeAtlasItem(2019, tr("蓝能电池"), 3, 0, 20, QUALITY_R, tr("基础蓝色电池，可作为通用消耗道具展示。"), 2, tr("backpack_category_item"))},
+    {2020, makeAtlasItem(2020, tr("过载燃料罐"), 3, 1, 9, QUALITY_SR, tr("红色高压燃料罐，危险但能量输出强。"), 1, tr("backpack_category_weapon"))},
+    {2021, makeAtlasItem(2021, tr("精密观测镜"), 3, 2, 5, QUALITY_R, tr("用于校准武器和扫描设备的镜头组件。"), 0, tr("backpack_category_material"))},
+    {2022, makeAtlasItem(2022, tr("加密紫晶芯片"), 3, 3, 3, QUALITY_SR, tr("写入加密指令的紫色芯片，可作为任务证明。"), 4, tr("backpack_category_quest"))},
+    {2023, makeAtlasItem(2023, tr("三角星核"), 3, 4, 2, QUALITY_SSR_PLUS, tr("三角框架包裹的蓝色星核，具有明显剧情道具视觉。"), 4, tr("backpack_category_quest"))},
+    {2024, makeAtlasItem(2024, tr("球形导航核心"), 3, 5, 2, QUALITY_SSR, tr("球形机械外壳内嵌导航阵列，用于任务收集展示。"), 4, tr("backpack_category_quest"))},
+
+    {2025, makeAtlasItem(2025, tr("侦察蜘蛛"), 4, 0, 4, QUALITY_SR, tr("四足侦察机械，可作为战术单位图标展示。"), 1, tr("backpack_category_weapon"))},
+    {2026, makeAtlasItem(2026, tr("护卫无人机"), 4, 1, 5, QUALITY_R, tr("小型护卫无人机，适合表现常规装备。"), 1, tr("backpack_category_weapon"))},
+    {2027, makeAtlasItem(2027, tr("引力地雷"), 4, 2, 7, QUALITY_SSR, tr("红色节点环绕的球形地雷，展示为高危武器。"), 1, tr("backpack_category_weapon"))},
+    {2028, makeAtlasItem(2028, tr("圆盘护盾发生器"), 4, 3, 2, QUALITY_SSR, tr("圆盘结构的护盾设备，可作为高级道具展示。"), 2, tr("backpack_category_item"))},
+    {2029, makeAtlasItem(2029, tr("机械维修臂"), 4, 4, 3, QUALITY_R, tr("可快速展开的维修机械臂，用于辅助道具展示。"), 2, tr("backpack_category_item"))},
+    {2030, makeAtlasItem(2030, tr("双筒远距侦测器"), 4, 5, 6, QUALITY_R, tr("双筒结构的远距侦测设备。"), 2, tr("backpack_category_item"))},
+
+    {2031, makeAtlasItem(2031, tr("跃迁环枢纽"), 5, 0, 1, QUALITY_UR, tr("红白金属环中的跃迁枢纽，适合压轴任务物品展示。"), 4, tr("backpack_category_quest"))},
+    {2032, makeAtlasItem(2032, tr("微型穿梭机"), 5, 1, 1, QUALITY_SR, tr("带蓝色尾焰的小型穿梭机，可作为特殊装备展示。"), 1, tr("backpack_category_weapon"))},
+    {2033, makeAtlasItem(2033, tr("双联涡轮炮"), 5, 2, 2, QUALITY_SSR_PLUS, tr("双联炮管和涡轮机芯组合的重型装备。"), 1, tr("backpack_category_weapon"))},
+    {2034, makeAtlasItem(2034, tr("紫晶秘匣"), 5, 3, 2, QUALITY_SSR, tr("紫色能量密封的神秘方匣，当前只展示不打开。"), 4, tr("backpack_category_quest"))},
+    {2035, makeAtlasItem(2035, tr("黄金秘匣"), 5, 4, 1, QUALITY_SSR_PLUS, tr("金色能量锁封存的高级秘匣。"), 4, tr("backpack_category_quest"))},
+    {2036, makeAtlasItem(2036, tr("蓝星核心"), 5, 5, 1, QUALITY_UR, tr("蓝色星芒在球形框架中汇聚，展示终极任务奖励。"), 4, tr("backpack_category_quest"))},
+    })
